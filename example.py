@@ -9,7 +9,7 @@ def main():
     plot = ggplot(data, aes("sepal_length", "sepal_width")) +\
         geom_point()
 
-    ggsave(plot=plot, filename="example.png")
+    ggsave(plot=plot, filename="example.png", verbose=False)
 
 if __name__ == "__main__":
     main()
